@@ -6,7 +6,7 @@ function setup() {
 
   createCanvas(500, 500);
   //noLoop();
-  frameRate(5);
+  frameRate(60);
 }
 function draw()
 {
