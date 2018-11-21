@@ -1,9 +1,10 @@
 let size;
+//var colour[0,0,0];
 
 function setup() {
 
   createCanvas(windowWidth, windowHeight);
-  frameRate(24);
+  frameRate(60);
   background(random(255));
   //noLoop();
 }
@@ -29,7 +30,7 @@ function draw()
 }
 function drawCircle(x,y)
 {
-  strokeWeight(1);
+  strokeWeight(0);
   fill(random(255),random(255),random(255),127);
   ellipse(mouseX, mouseY,mouseX*0.75,mouseY*0.75);
   fill(random(255),random(255),random(255),127);
@@ -54,7 +55,7 @@ function drawRectange(x,y)
 
 function drawTriangle(x,y)
 {
-  strokeWeight(2);
+  strokeWeight(0);
   size = random(200);
   fill(random(255),random(255),random(255),random(255));
   triangle(mouseX-66, mouseY, mouseX+66, mouseY,mouseX,mouseY/4);
