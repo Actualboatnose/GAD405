@@ -6,22 +6,20 @@ var b = 0;
 
 function setup() {
   input[0] = createInput();
-  input[0].position(45,550);
+  input[0].position(45,750);
   input[1] = createInput();
-  input[1].position(45, 575);
+  input[1].position(45, 775);
   input[2] = createInput();
-  input[2].position(45, 600);
+  input[2].position(45, 800);
   button = createButton('submit');
-  button.position(input[2].x + input[2].width, 600);
+  button.position(input[2].x + input[2].width, 800);
   button.mousePressed(recolour);
-
 
   let size;
   createCanvas(windowWidth, windowHeight);
   frameRate(30);
   background(random(255));
   //noLoop();
-
 }
 
 function draw()
@@ -106,7 +104,6 @@ function keyPressed()
     input[2].value('');
     background(random(255));
   }
-
 }
 
 function windowResized(){
