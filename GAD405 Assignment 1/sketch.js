@@ -1,6 +1,6 @@
 var input = [];
 //The input array takes values that the user put in through the text boxes
-//from the program itself, and assigns the values to R B and G values
+//from the program itself, and assigns the values to R G and B values
 //this then determines what the colour of the shapes will be.
 var button;
 var r = 255;
