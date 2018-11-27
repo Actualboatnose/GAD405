@@ -31,7 +31,8 @@ function setup() {
   stroke(255, 0, 0);
   strokeWeight(0.2);
   textSize(20);
-  text(k, 10, 10, 300, 400); // Text wraps within text box
+  text(k, 10, 10, 300, 400);
+  //Text wraps within text box
 }
 
 function draw()
@@ -51,7 +52,6 @@ function draw()
     stroke(r + 20,g + 20,b + 20)
       if (mouseIsPressed)
     {
-      var k = ''
       console.log("This is doing things");
       if (mouseButton === LEFT)
       {
@@ -96,6 +96,7 @@ function drawRectange(x,y)
   rect(mouseX*0.75, mouseY*0.75,mouseX*0.5,mouseY*0.5);
   fill(ShapesColour[0],ShapesColour[1],ShapesColour[2],random(255));
   rect(mouseX*0.875, mouseY*0.875,mouseX*0.25,mouseY*0.25);
+  //
 }
 
 function drawTriangle(x,y)
