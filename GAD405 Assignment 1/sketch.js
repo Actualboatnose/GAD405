@@ -8,7 +8,7 @@ var g = 0;
 var b = 0;
 //The Default colour of the shapes are red.
 var k = 'Program Key: 1) You cannot draw anything until you have three values put into the three textboxes.                                    2) Once you have done this step you draw ellipses automatically, to change this you can hold down middle mouse button for rectangles and hold left click to draw triangle.                              3) To reset the program press r on the keyboard.';
-//with the text i couldn't find anything about proper spacing so I just had to do it manually.
+//with the text I couldn't find anything about proper spacing so I just had to do it manually.
 
 function setup() {
   input[0] = createInput();

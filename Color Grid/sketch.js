@@ -1,9 +1,4 @@
 
-let size = 50;
-let size2 = 25;
-
-noStroke();
-
 function setup() {
 
   createCanvas(500, 500);
@@ -12,32 +7,30 @@ function setup() {
 }
 function draw()
 {
+  size=width/10
   background(0);
 
-  for (let y = 0; y< 10; y++)
+  red1 = map(mouseX, 0, width, 0, 10)
+  red2 = map(mouseY, 0, width, 0, 10)
+  opy= map(mouseY,0,600,0,255)
+  opx= map(mouseX,0,600,0,255)
+  avop=(opx+opy)/2
+  for(let x=0;x<10;x++)
   {
-    for (let x = 0; x < 10; x++)
+    for(let y=0;y<10;y++)
     {
-    stroke(0);
-    fill(255, 137, 0, 255);
-    rect(size*x, size*y, size, size);
-
-      if ()
 
 
-
-
-    console.log("X: " + x + " Y: " + y);
-
+      fill(255,127.5,0,avop);
+      if(x==int(red1)||y==int(red2))
+      {
+        fill(0,255,255,avop);
+      }
+    if(x==int(red1)&&y==int(red2))
+    {
+      fill(255,0,0);
+    }
+    rect(size*x,size*y,size,size);
     }
   }
-
-
-  /*for (let x = 0; x < 10; x++)
-  {
-    rect(size * x, height / 2.2, size, size);
-    rect(size * x, height * 0.9, size, size);
-    rect(size * x, height / 500, size, size);
-  }
-  */
 }
